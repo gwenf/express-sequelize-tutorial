@@ -1,0 +1,6 @@
+PORT=3000
+NODE_ENV=local
+DB_USERNAME=localhost
+DB_PASSWORD=
+DB_HOST=localhost
+DB_NAME=tutorial_dev

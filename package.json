@@ -1,0 +1,61 @@
+{
+  "name": "express-sequelize-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "setup": "npm i && cp sample-env .env",
+    "start": "cross-env NODE_ENV=local nodemon app.js",
+    "preprod": "npm i --production",
+    "prod": "cross-env NODE_ENV=production && node server.js",
+    "db:create": "npx sequelize-cli db:create",
+    "db:seed": "npx sequelize-cli db:seed:all",
+    "db:clean": "npx sequelize-cli db:seed:undo:all",
+    "db:migrate": "npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "Gwendolyn Faraday",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "7.4.4",
+    "babel-eslint": "10.0.1",
+    "cors": "2.8.5",
+    "cross-env": "5.2.0",
+    "dotenv": "8.0.0",
+    "express": "4.16.4",
+    "helmet": "3.18.0",
+    "module-alias": "2.2.0",
+    "pg": "7.11.0",
+    "pg-hstore": "2.3.2",
+    "sequelize": "5.8.6",
+    "sequelize-cli": "5.4.0",
+    "socket.io": "2.2.0",
+    "swagger-express-middleware": "2.0.2",
+    "swagger-ui-express": "4.0.3",
+    "winston": "3.2.1",
+    "winston-daily-rotate-file": "3.9.0",
+    "yamljs": "0.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.4",
+    "@babel/register": "7.4.4",
+    "axios": "0.18.0",
+    "babel-register": "6.26.0",
+    "eslint": "5.16.0",
+    "jest": "24.8.0",
+    "moxios": "0.4.0",
+    "nodemon": "1.19.0",
+    "supertest": "4.0.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@utils": "utils",
+    "@api": "server/api",
+    "@models": "db/models",
+    "@logger": "utils/logger"
+  }
+}

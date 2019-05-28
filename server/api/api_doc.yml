@@ -1,0 +1,76 @@
+swagger: "2.0"
+info: 
+  description: "Documentation for the ReSTful API's used by Express Sequelize Tutorial"
+  version: "1.0.0"
+  title: express-sequelize-tutorial
+  
+schemes:
+- "https"
+- "http"
+
+paths:
+
+  /users:
+    get:
+      summary: "List all users"
+      parameters: 
+      - name: "users"
+        in: "query"
+        required: false
+        type:  "string"
+      
+      responses:
+        '200':
+          description: 'success!'
+
+    post:
+      summary: "Create one user"
+      parameters: 
+      - name: "firstName" 
+        in: "query"
+        required: true
+        type:  "string"
+      - name: "lastName" 
+        in: "query"
+        required: true
+        type:  "string"
+
+      responses:
+        '200':
+          description: 'Successful creation of new user' 
+      
+  /users/:userId:  
+    get:
+      summary: "Return one user"
+      parameters: 
+      - name: "userId"
+        in: "query"
+        required: true
+        type:  "string"
+      responses:
+        '200':
+          description: 'Successfully retrieved one user' 
+          
+    patch:
+      summary: "Update one user"
+      parameters: 
+      - name: "userID"
+        in: "query"
+        required: true
+        type: "string"
+
+      responses:
+        '200':
+          description: 'Updated one user object' 
+    
+    delete:
+      summary: "Delete one user"
+      parameters: 
+      - name: "userID"
+        in: "query"
+        required: true
+        type: "string"
+
+      responses:
+        '200':
+          description: 'Deleted one user object' 
