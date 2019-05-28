@@ -3,7 +3,7 @@
 1. Local Setup
 2. Database
 3. NPM Scripts
-4. More Information: See Wiki
+4. More Information: See Wiki (coming soon)
 
 ## Local Setup
 
