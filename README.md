@@ -7,7 +7,7 @@
 
 ## Local Setup
 
-1. `npm run setup` -> installs NPM packages and creates the .env file (might not work on Windows, sorry)
+1. `npm run setup` -> installs NPM packages and creates the .env file (might not work on Windows, sorry); if it doesn't work for you, then just manually copy the sample-env file and rename it `.env`
 2. Fill in the `.env` file according to your local setup
 3. Make sure Postgres is running on your local machine
 4. Set up the db:
