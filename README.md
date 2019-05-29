@@ -1,5 +1,7 @@
 # Express-Sequelize Tutorial
 
+*please note: I am still working on the code in this repo. Things might not all be working correctly yet.*
+
 1. Local Setup
 2. Database
 3. NPM Scripts
