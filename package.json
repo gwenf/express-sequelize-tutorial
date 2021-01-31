@@ -30,8 +30,6 @@
     "module-alias": "2.2.0",
     "pg": "7.11.0",
     "pg-hstore": "2.3.2",
-    "sequelize": "5.8.6",
-    "sequelize-cli": "5.4.0",
     "socket.io": "2.2.0",
     "swagger-express-middleware": "2.0.2",
     "swagger-ui-express": "4.0.3",

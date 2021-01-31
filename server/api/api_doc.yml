@@ -1,6 +1,6 @@
 swagger: "2.0"
 info: 
-  description: "Documentation for the ReSTful API's used by Express Sequelize Tutorial"
+  description: ""
   version: "1.0.0"
   title: express-sequelize-tutorial
   

@@ -1,0 +1,1 @@
+// id, user (fk), text, completed (boolean)
